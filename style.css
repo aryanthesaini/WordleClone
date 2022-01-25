@@ -113,6 +113,10 @@ header{
 
 @media screen and (max-width:786px){
     
+    header{
+        border: none;
+    }
+    
     .title{
         color: gainsboro;
         font-size: 2rem;
@@ -124,7 +128,7 @@ header{
     .square{
         border: 2px solid rgb(118, 103, 103);
         min-height: 45px;
-        min-width: 50px;
+        min-width: 45px;
         border-radius: 8px;
         font-size: 25px;
         font-weight: bold;
