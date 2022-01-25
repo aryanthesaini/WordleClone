@@ -88,13 +88,13 @@ header{
 
 .keyboard-row button{
     font-family: inherit;
-    font-weight: bold;
+    font-weight: bolder;
     border: 0;
     padding: 0;
     height: 58px;
     cursor: pointer;
-    background-color: rgb(75, 70, 70);
-    color: white;
+    background-color: rgb(239, 237, 237);
+    color: rgb(4, 3, 3);
     flex-grow: 1;
     text-transform: uppercase;
     margin-right: 6px;
@@ -153,20 +153,19 @@ header{
     
     .keyboard-row button{
         font-family: inherit;
-        font-weight: bold;
+        font-weight: bolder;
         border: 0;
         padding: 0;
         height: 58px;
         cursor: pointer;
-        background-color: rgb(75, 70, 70);
-        color: white;
+        background-color: rgb(239, 237, 237);
+        color: rgb(4, 3, 3);
         flex-grow: 1;
         text-transform: uppercase;
         margin-right: 6px;
         border-radius: 5px;
         user-select: none;
     }
-    
     .keyboard-row button.wide-button{
         flex-grow: 1.5;
     }
