@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let guessedWords = [[]];
     let guessedWordCount = 0;
     let availableSpace = 1;
-    let word = randomWords[randomNum];
-    console.log(word);
+    let word = 'women';
+    // console.log(word);
 
     const keys = document.querySelectorAll('.keyboard-row button');
 
@@ -83,9 +83,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     const tilecolor = getTileColor(letter, i);
                     const letterId = firstLetterId + i;
+                    // console.log(letterId);
                     const letterEl = document.getElementById(letterId);
+                    const wordAtLetterEl = letterEl.innerText;
+                    // console.log(wordAtLetterEl);
+                    const buttonEl = document.querySelector(`#${wordAtLetterEl}`);
+                    // console.log(buttonEl)
                     letterEl.classList.add('animate__flipInX');
-                    letterEl.style = `background-color:${tilecolor}; border-color:${tilecolor}`
+                    letterEl.style = `background-color:${tilecolor}; border-color:${tilecolor}`;
+                    buttonEl.style = `background-color:${tilecolor}; border-color:${tilecolor}`
+
                 }, interval * i)
             });
             guessedWordCount += 1;
