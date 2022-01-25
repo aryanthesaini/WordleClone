@@ -46,6 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return "rgb(181, 159, 59)"
     }
 
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+
     function handleDeleteLetter() {
         const currentWordArr = getCurrentWordArr();
         const removedLetter = currentWordArr.pop();
@@ -63,7 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentWordArr.length != 5) {
             window.alert("Word must contain 5 letters!")
         }
-        const currentWord = currentWordArr.join('');
+        let currentWord = currentWordArr.join('');
+
+        currentWord = capitalizeFirstLetter(currentWord);
+        console.log(currentWord);
         if (!randomWords.includes(currentWord)) {
             window.alert("No such word recognised!")
         }
