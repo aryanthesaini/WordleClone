@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let guessedWords = [[]];
     let guessedWordCount = 0;
     let availableSpace = 1;
-    let word = 'women';
+    let word = 'entry';
     // console.log(word);
 
     const keys = document.querySelectorAll('.keyboard-row button');
