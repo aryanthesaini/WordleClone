@@ -1,3 +1,3 @@
 # WordleClone
 
-https://aryanthesaini.github.io/WordleClone/
+## [Live Demo](https://wordle-clone-azure.vercel.app/)
